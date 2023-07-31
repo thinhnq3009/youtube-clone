@@ -1,0 +1,107 @@
+.AppGuide {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+.AppGuide .logo-container {
+  display: flex;
+  align-items: center;
+  height: 54px;
+}
+.AppGuide .logo-container .menu-icon {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AppGuide .logo-container .menu-icon:hover {
+  background-color: rgba(0, 0, 0, 0.1019607843);
+  border-radius: 20px;
+}
+.AppGuide .logo-container .logo-wrapper {
+  position: relative;
+}
+.AppGuide .logo-container .logo-wrapper::after {
+  content: attr(nation);
+  position: absolute;
+  top: 12px;
+  right: 0;
+  display: block;
+  font-size: 10px;
+}
+.AppGuide .logo-container img {
+  height: 20px;
+  width: 90px;
+  margin: 18px 14px 18px 16px;
+  position: relative;
+}
+.AppGuide .item-container {
+  display: flex;
+  flex-direction: column;
+}
+.AppGuide .item-container:nth-child(n+3) {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.AppGuide .item-container .title {
+  margin-bottom: 0;
+  display: block;
+  padding: 6px 12px 4px;
+  color: var(--yt-spec-text-primary);
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 2.2rem;
+  font-weight: 400;
+}
+.AppGuide .item-wrapper {
+  margin-right: 12px;
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  color: #0f0f0f;
+  border-radius: 10px;
+}
+.AppGuide .item-wrapper:hover {
+  background-color: rgba(0, 0, 0, 0.1019607843);
+}
+.AppGuide .item-wrapper .left-icon {
+  font-size: 21px;
+  margin-right: 24px;
+}
+.AppGuide .item-wrapper .content {
+  flex: 1;
+  font-size: 14px;
+}
+
+.mini-guide {
+  width: 64px;
+}
+.mini-guide .item-container {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.mini-guide .item-container .item-wrapper {
+  flex-direction: column;
+  padding: 16px 0 14px 0;
+  justify-content: center;
+  height: unset;
+}
+.mini-guide .item-container .item-wrapper .left-icon {
+  margin: 0;
+}
+.mini-guide .item-container .item-wrapper .content {
+  font-size: 10px;
+  line-height: 12px;
+}
+.mini-guide .item-container .item-wrapper .right-icon {
+  display: none;
+}
+.mini-guide .item-container .channel-item {
+  display: none !important;
+}/*# sourceMappingURL=app-guide.css.map */

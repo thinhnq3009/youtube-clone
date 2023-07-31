@@ -1,0 +1,211 @@
+.AppHeader {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.AppHeader .left-wrapper {
+  display: flex;
+  height: 100%;
+}
+.AppHeader .left-wrapper .menu-icon {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AppHeader .left-wrapper .menu-icon:hover {
+  background-color: rgba(0, 0, 0, 0.1019607843);
+  border-radius: 20px;
+}
+.AppHeader .left-wrapper .logo-wrapper {
+  position: relative;
+}
+.AppHeader .left-wrapper .logo-wrapper::after {
+  content: attr(nation);
+  position: absolute;
+  top: 12px;
+  right: 0;
+  display: block;
+  font-size: 10px;
+}
+.AppHeader .left-wrapper img {
+  height: 20px;
+  width: 90px;
+  margin: 18px 14px 18px 16px;
+  position: relative;
+}
+.AppHeader .center-wrapper {
+  flex: 0 1 728px;
+  display: flex;
+}
+.AppHeader .center-wrapper .search-container {
+  flex: 1;
+  margin-left: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: end;
+}
+.AppHeader .center-wrapper .input-container {
+  position: relative;
+  width: 584px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 2px 4px 2px 48px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.AppHeader .center-wrapper .input-container .input-icon {
+  padding: 0 12px 0 16px;
+  position: absolute;
+  left: 0;
+  color: #030303;
+  font-size: 16px;
+}
+.AppHeader .center-wrapper .input-container input {
+  color: #171717;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  flex: 1;
+}
+.AppHeader .center-wrapper .input-container .keyboard-icon {
+  padding: 0 6px;
+  font-size: 19px;
+}
+.AppHeader .center-wrapper .btn-search {
+  border: 1px solid #d3d3d3;
+  background-color: #f8f8f8;
+  border-radius: 0 40px 40px 0;
+  cursor: pointer;
+  height: 40px;
+  width: 64px;
+  margin: 0;
+}
+.AppHeader .center-wrapper .mic-icon {
+  margin-left: 4px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.AppHeader .center-wrapper .mic-icon:hover {
+  background-color: rgba(0, 0, 0, 0.1019607843);
+  border-radius: 20px;
+}
+.AppHeader .right-wrapper {
+  width: 225px;
+  height: 40px;
+  display: flex;
+  justify-content: end;
+  flex-direction: row-reverse;
+}
+.AppHeader .right-wrapper .item {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.AppHeader .right-wrapper .item:hover {
+  background-color: rgba(0, 0, 0, 0.1019607843);
+  border-radius: 20px;
+}
+.AppHeader .right-wrapper .item .badeg {
+  position: absolute;
+  top: -4px;
+  right: 0px;
+  color: #fff;
+  background-color: #f00;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 0 4px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+.AppHeader .right-wrapper .avatar {
+  padding: 1px 6px;
+}
+.AppHeader .right-wrapper .avatar img {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 16px;
+}
+.AppHeader .not-login a,
+.AppHeader .not-login button {
+  padding: 0 16px;
+  background-color: transparent;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  border: 1px solid #065fd4;
+  color: #065fd4;
+  line-height: 24px;
+}
+.AppHeader .not-login a .bi,
+.AppHeader .not-login button .bi {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.AppHeader .notice-container {
+  width: 90% !important;
+  max-width: 480px !important;
+  overflow: hidden;
+}
+.AppHeader .notice-container li,
+.AppHeader .notice-container a {
+  width: 100%;
+}
+.AppHeader .notice-container .notice-item {
+  padding: 10px 24px 10px 8px;
+}
+.AppHeader .notice-container .new {
+  font-size: 16px;
+  padding-top: 12px;
+  margin-right: -5px;
+  color: #065fd4;
+}
+.AppHeader .notice-container .avatar img {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+.AppHeader .notice-container .notice-wrapper {
+  width: 285px;
+}
+.AppHeader .notice-container .notice-content {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+.AppHeader .notice-container .notice-time {
+  font-size: 12px;
+}
+.AppHeader .notice-container .poster img {
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 86px;
+  border-radius: 5px;
+}/*# sourceMappingURL=app-header.css.map */

@@ -1,0 +1,67 @@
+.MyProfile .profile-container {
+  padding: 1rem 0;
+  border: 2px solid #606060;
+  border-radius: 15px;
+}
+.MyProfile .profile-container h4.title {
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+  border-bottom: 2px solid #606060;
+}
+.MyProfile .profile-container .form-wrapper {
+  padding: 1.5rem 1rem;
+}
+.MyProfile .profile-container .profile-item {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.MyProfile .profile-container .profile-item .title {
+  min-width: 145px;
+  margin-right: 30px;
+}
+.MyProfile .profile-container .profile-item .content {
+  max-width: 400px;
+  flex: 1;
+}
+.MyProfile .profile-container .profile-item .content textarea,
+.MyProfile .profile-container .profile-item .content input {
+  padding: 0.5rem 0.9rem;
+  background: rgba(0, 0, 0, 0.1137254902);
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.MyProfile .profile-container .profile-item .content .coating,
+.MyProfile .profile-container .profile-item .content input[type=file],
+.MyProfile .profile-container .profile-item .content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.MyProfile .profile-container .profile-item .content input[type=file] {
+  position: absolute;
+  opacity: 0;
+}
+.MyProfile .profile-container .profile-item .content .coating {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2666666667);
+  transition: 0.3s;
+  font-size: 20px;
+  justify-content: center;
+  display: none;
+}
+.MyProfile .profile-container button.save {
+  font-size: 17px;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 25px;
+  border: 2px solid #065fd4;
+  background: transparent;
+  color: #065fd4;
+}
+.MyProfile .hover-owner:hover + .coating {
+  display: flex;
+}/*# sourceMappingURL=my-profile.css.map */

@@ -1,0 +1,145 @@
+.AppProfile .info-container {
+  display: flex;
+}
+.AppProfile .info-container .avatar-container {
+  width: 80px;
+  height: 80px;
+  margin-right: 24px;
+  display: flex;
+  justify-content: center;
+}
+.AppProfile .info-container .avatar-container img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.AppProfile .info-container .channel-name {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.AppProfile .info-container .channel-name span {
+  font-size: 12px;
+  color: #606060;
+  padding-bottom: 8px;
+}
+.AppProfile .info-container .channel-id,
+.AppProfile .info-container .subscriber-counter {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #606060;
+  font-weight: 400;
+}
+.AppProfile .btn-subscriber {
+  height: 36px;
+  display: inline-block;
+  line-height: 36px;
+  background-color: #0f0f0f;
+  color: white;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 18px;
+}
+.AppProfile .video-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.AppProfile .video-container .video-item {
+  margin-bottom: 24px;
+}
+.AppProfile .video-container .video-item:hover .menu {
+  display: flex;
+}
+.AppProfile .video-container .title-container {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.AppProfile .video-container .title-container .title {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  color: #0f0f0f;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.AppProfile .video-container .title-container .title .bi {
+  font-size: 24px;
+  margin-right: 16px;
+}
+.AppProfile .video-container .title-container a {
+  line-height: 36px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #065fd4;
+}
+.AppProfile .video-container .title-container a:hover {
+  background: #def1ff;
+  border-radius: 18px;
+}
+.AppProfile .video-container .video-cover-image {
+  width: 100%;
+  position: relative;
+}
+.AppProfile .video-container .video-cover-image img {
+  width: 100%;
+  border-radius: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.AppProfile .video-container .video-cover-image .time {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  padding: 3px 4px;
+  background-color: #000;
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.AppProfile .video-container .detail-container {
+  padding: 8px 0 8px 0;
+  padding-right: 30px;
+  position: relative;
+}
+.AppProfile .video-container .detail-container .title {
+  font-size: 14px;
+  line-height: 20px;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.AppProfile .video-container .detail-container .data,
+.AppProfile .video-container .detail-container .channel-name {
+  color: #606060;
+  font-size: 12px;
+}
+.AppProfile .video-container .detail-container .menu {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  display: none;
+}
+.AppProfile .video-container .detail-container .menu .bi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 30px;
+  height: 30px;
+}
+.AppProfile .video-container .detail-container .menu .bi:hover {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1019607843);
+}/*# sourceMappingURL=app-profile.css.map */

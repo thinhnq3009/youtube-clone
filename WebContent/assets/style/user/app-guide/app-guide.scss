@@ -1,0 +1,122 @@
+.AppGuide {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        height: 54px;
+
+        .menu-icon {
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background-color: #0000001a;
+                border-radius: 20px;
+            }
+        }
+
+        .logo-wrapper {
+            position: relative;
+            &::after {
+                content: attr(nation);
+                position: absolute;
+                top: 12px;
+                right: 0;
+                display: block;
+                font-size: 10px;
+            }
+        }
+
+        img {
+            height: 20px;
+            width: 90px;
+            margin: 18px 14px 18px 16px;
+            position: relative;
+        }
+    }
+
+    .item-container {
+        display: flex;
+        flex-direction: column;
+
+        &:nth-child(n + 3) {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #0000001a;
+        }
+
+        .title {
+            margin-bottom: 0;
+            display: block;
+            padding: 6px 12px 4px;
+            color: var(--yt-spec-text-primary);
+            font-family: "Roboto", "Arial", sans-serif;
+            font-size: 16px;
+            line-height: 2.2rem;
+            font-weight: 400;
+        }
+    }
+
+    .item-wrapper {
+        margin-right: 12px;
+        width: 100%;
+        height: 40px;
+        padding: 0 12px;
+        display: flex;
+        align-items: center;
+        color: #0f0f0f;
+        border-radius: 10px;
+        &:hover {
+            background-color: #0000001a;
+        }
+        .left-icon {
+            font-size: 21px;
+            margin-right: 24px;
+        }
+
+        .content {
+            flex: 1;
+            font-size: 14px;
+        }
+    }
+}
+
+
+.mini-guide {
+    width: 64px;
+
+    .item-container {
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        .item-wrapper {
+            flex-direction: column;
+            padding: 16px 0 14px 0;
+            justify-content: center;
+            height: unset;
+            .left-icon {
+                margin: 0;
+            }
+
+            .content {
+                font-size: 10px;
+                line-height: 12px;
+            }
+
+            .right-icon {
+                display: none;
+            }
+        }
+
+        .channel-item {
+            display: none !important;
+        }
+      
+    }
+}

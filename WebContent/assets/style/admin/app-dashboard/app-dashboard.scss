@@ -1,0 +1,40 @@
+.AppDashboard {
+    .content-box {
+        border-radius: 15px;
+    }
+
+    .card-container {
+        .item {
+            display: flex;
+            border: 1px solid #606060;
+            border-radius: 10px;
+            padding: 1rem 2rem;
+            border-left: 5px solid #eb1d36;
+            position: relative;
+
+            .title {
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .content {
+                font-size: 32px;
+                font-weight: 500;
+                color: #5a5c69;
+
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            .icon {
+                font-size: 50px;
+                color: #dddfeb;
+                position: absolute;
+                right: 5%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

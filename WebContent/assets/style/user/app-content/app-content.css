@@ -1,0 +1,91 @@
+.AppContent .suggest-container {
+  height: 56px;
+  display: flex;
+  padding-left: 20px;
+}
+.AppContent .suggest-container .item {
+  margin: 12px;
+  padding: 0 12px;
+  height: 32px;
+  display: block;
+  line-height: 32px;
+  background: rgba(0, 0, 0, 0.1019607843);
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.AppContent .suggest-container .item:not(:first-child) {
+  margin-left: 0;
+}
+.AppContent .suggest-container .item:hover {
+  background: rgba(0, 0, 0, 0.1647058824);
+}
+.AppContent .list-video-container .item:hover .detail::after {
+  display: block;
+}
+.AppContent .list-video-container .item .video-cover-image {
+  width: 100%;
+  padding: 12px;
+  position: relative;
+}
+.AppContent .list-video-container .item .video-cover-image img {
+  border-radius: 10px;
+  width: 100%;
+}
+.AppContent .list-video-container .item .video-cover-image .time {
+  position: absolute;
+  bottom: 17px;
+  right: 17px;
+  padding: 3px 4px;
+  background-color: #000;
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.AppContent .list-video-container .item .detail {
+  padding-right: 24px;
+  position: relative;
+}
+.AppContent .list-video-container .item .detail::after {
+  content: "\f5d3";
+  font-family: "bootstrap-icons" !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  display: none;
+}
+.AppContent .list-video-container .item .avatar {
+  margin-top: 12px;
+  margin-right: 12px;
+  width: 36px;
+  min-width: 36px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 36px;
+  border-radius: 50%;
+}
+.AppContent .list-video-container .item .title {
+  font-size: 16px;
+  font-weight: 500;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.AppContent .list-video-container .item .channel-name {
+  font-size: 14px;
+  color: #606060;
+}
+.AppContent .list-video-container .item .channel-name span {
+  padding-left: 4px;
+}
+.AppContent .list-video-container .item .data {
+  color: #606060;
+  font-size: 14px;
+}/*# sourceMappingURL=app-content.css.map */

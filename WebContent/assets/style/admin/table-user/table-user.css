@@ -1,0 +1,58 @@
+.Table .content-box {
+  border: 2px solid #606060;
+  border-radius: 15px;
+}
+.Table .title-box {
+  border-bottom: 2px solid #606060;
+  padding: 1rem 2rem;
+  margin-bottom: 0.8rem;
+}
+.Table .table .poster-wrapper {
+  max-width: 400px;
+}
+.Table .table .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.Table .table .poster {
+  width: 100px;
+  border-radius: 10px;
+}
+.Table .table .title {
+  align-self: start;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.Table .table .channel-name {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.Table button.button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.Table button.button:hover {
+  background-color: rgba(0, 0, 0, 0.1137254902);
+}
+
+.text-wrapper h2 {
+  font-size: 14px !important;
+  font-weight: 500px !important;
+  margin-bottom: 0.4rem;
+  min-width: 240px;
+  display: flex;
+  justify-content: space-between;
+}
+.text-wrapper h2 span {
+  font-weight: 400;
+  color: #606060;
+}/*# sourceMappingURL=table-user.css.map */

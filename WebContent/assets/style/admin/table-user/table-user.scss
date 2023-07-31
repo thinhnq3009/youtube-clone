@@ -1,0 +1,73 @@
+.Table {
+    .content-box {
+        border: 2px solid #606060;
+        border-radius: 15px;
+    }
+
+    .title-box {
+        border-bottom: 2px solid #606060;
+        padding: 1rem 2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .table {
+.poster-wrapper {
+    max-width: 400px;
+}
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .poster {
+            width: 100px;
+            border-radius: 10px;
+        }
+
+        .title {
+            align-self: start;
+            margin-bottom: 0;
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 500;
+        }
+
+        .channel-name {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+    }
+
+    button.button {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent ;
+        border-radius: 50%;
+        &:hover {
+            background-color: #0000001d;
+        }
+
+    }
+
+  
+}
+
+ .text-wrapper h2{
+    font-size: 14px !important;
+    font-weight: 500px !important;
+    margin-bottom: .4rem;
+    min-width: 240px;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        font-weight: 400;
+        color: #606060;
+    }
+} 

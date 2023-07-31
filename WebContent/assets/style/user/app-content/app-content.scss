@@ -1,0 +1,109 @@
+.AppContent {
+    .suggest-wrapper {
+    }
+
+    .suggest-container {
+        height: 56px;
+        display: flex;
+        padding-left: 20px;
+        .item {
+            margin: 12px;
+            padding: 0 12px;
+            height: 32px;
+            display: block;
+            line-height: 32px;
+            background: #0000001a;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            &:not(:first-child) {
+                margin-left: 0;
+            }
+
+            &:hover {
+                background: #0000002a;
+            }
+        }
+    }
+
+    .list-video-container {
+        .item {
+            &:hover .detail::after {
+                display: block;
+            }
+
+            .video-cover-image {
+                width: 100%;
+                padding: 12px;
+                position: relative;
+
+                img {
+                    border-radius: 10px;
+                    width: 100%;
+                }
+
+                .time {
+                    position: absolute;
+                    bottom: calc(12px + 5px);
+                    right: calc(12px + 5px);
+                    padding: 3px 4px;
+                    background-color: #000;
+                    font-size: 12px;
+                    line-height: 12px;
+                    color: #fff;
+                    border-radius: 4px;
+                    font-weight: 500;
+                }
+            }
+
+            .detail {
+                padding-right: 24px;
+                position: relative;
+                &::after {
+                    content: "\F5D3";
+                    font-family: "bootstrap-icons" !important;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    font-size: 16px;
+                    display: none;
+                }
+            }
+
+            .avatar {
+                margin-top: 12px;
+                margin-right: 12px;
+                width: 36px;
+                min-width: 36px;
+                object-fit: contain;
+                height: 36px;
+                border-radius: 50%;
+            }
+
+            .title {
+                font-size: 16px;
+                font-weight: 500;
+
+                white-space: wrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 20px;
+                -webkit-line-clamp: 2; // Cross-browser support for line-clamping
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
+
+            .channel-name {
+                font-size: 14px;
+                color: #606060;
+                span {
+                    padding-left: 4px;
+                }
+            }
+            .data {
+                color: #606060;
+                font-size: 14px;
+            }
+        }
+    }
+}

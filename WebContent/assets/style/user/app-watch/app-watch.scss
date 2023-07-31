@@ -1,0 +1,343 @@
+.AppWatch {
+    .video-container {
+        position: relative;
+        .video {
+            border: none;
+          	border-radius: 10px;
+        }
+    }
+
+    .control-container {
+        padding: 0 12px 10px 12px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        .forward {
+            width: 100%;
+            height: 3px;
+            background: #ffffff66;
+            outline: none;
+            -webkit-appearance: none;
+
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                width: 10px;
+                height: 10px;
+                background-color: #f00;
+                border-radius: 50%;
+            }
+        }
+
+        .bi {
+            font-size: 30px;
+            color: white;
+        }
+    }
+
+    .video-info-container {
+        .title {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .owner-container {
+            .owner-avt-wrapper {
+                width: 52px;
+
+                .avatar {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 20px;
+                }
+            }
+
+            .owner-info {
+                margin-right: 24px;
+                .channel-name {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #0f0f0f;
+                    margin-bottom: 0;
+                }
+
+                .subscriber-count {
+                    color: #606060;
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                }
+            }
+
+            .btn-subcribe {
+                height: 36px;
+                padding: 0 16px;
+                background-color: #0f0f0f;
+                color: white;
+                border-radius: 18px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+
+        .action-container {
+            .like-wrapper {
+                display: flex;
+                margin-right: 8px;
+            }
+
+            .like {
+                border-top-left-radius: 18px;
+                border-bottom-left-radius: 18px;
+            }
+
+            .dislike {
+                border-top-right-radius: 18px;
+                border-bottom-right-radius: 18px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: -1px;
+                    top: 6px;
+                    background: #d9d9d9;
+                    width: 1px;
+                    height: 24px;
+                }
+            }
+
+            .share {
+                border-radius: 18px;
+                margin-right: 18px;
+            }
+
+            .save {
+                border-radius: 18px;
+            }
+        }
+
+        .like,
+        .dislike,
+        .share,
+        .save {
+            padding: 0 16px;
+            height: 36px;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            &:hover {
+                background-color: #e5e5e5;
+            }
+
+            .bi {
+                font-size: 20px;
+                margin-right: 4px;
+            }
+        }
+    }
+
+    .description-container {
+        margin-top: 12px;
+        margin-bottom: 24px;
+        padding: 12px;
+        border-radius: 12px;
+        background: #0000000d;
+
+        .info-container {
+            width: 100%;
+            font-size: 14px;
+            display: flex;
+            span {
+                margin-right: 7px;
+            }
+            .info {
+                font-weight: 500;
+            }
+            .hashtag {
+                font-weight: 500;
+                color: #065fd4;
+                cursor: pointer;
+                margin-right: 3px;
+            }
+        }
+
+        .description {
+            font-size: 14px;
+        }
+    }
+
+    // Phần viết bình luận
+    .comment-container {
+        .comment-count {
+            margin-bottom: 24px;
+            font-size: 16px;
+        }
+
+        .write-comment-box {
+            .comment-box {
+                border-bottom: 1px solid #909090;
+                position: relative;
+
+                &:focus-within::after {
+                    width: 100%;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -1px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #323232;
+                    width: 0%;
+                    height: 1.5px;
+                    border-radius: 1px;
+                    transition: 0.2s;
+                }
+            }
+
+            .comment-input {
+                padding-bottom: 4px;
+                border: none;
+                outline: none;
+                font-size: 14px;
+                font-weight: 400;
+                position: relative;
+                // &:focus > .comment-box {
+                //     background-color: #065fd4;
+                // }
+            }
+
+            .btn-cancel,
+            .btn-submit {
+                height: 36px;
+                padding: 0 16px;
+                border-radius: 18px;
+                background-color: transparent;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .btn-submit {
+                margin-left: 8px;
+                background-color: #065fd4;
+                color: #fff;
+            }
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 16px;
+        }
+    }
+
+    // Phần hiển thị bình luận cũ
+    .commented {
+        .comment-item {
+            display: flex;
+            margin-bottom: 16px;
+            .owner {
+                margin-bottom: 0;
+                line-height: 20px;
+                font-size: 13px;
+                font-weight: 500;
+                .timer {
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+            }
+
+            .content {
+                font-size: 14px;
+                margin-bottom: 4px;
+            }
+
+            .action-container {
+                display: flex;
+                align-items: center;
+                .action-btn {
+                    width: 32px;
+                    height: 32px;
+                    background-color: transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 18px;
+                    font-size: 20px;
+                    &:hover {
+                        background-color: #e5e5e5;
+                    }
+                }
+
+                .like-count {
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+
+    // Phần hiển thị video đề xuất
+    .list-video-wrapper {
+        .item {
+            height: 94px;
+        }
+
+        .video-cover-image {
+            // width: 100%;
+            position: relative;
+            img {
+                width: 100%;
+                object-fit: contain;
+                border-radius: 10px;
+            }
+
+            .time {
+                position: absolute;
+                bottom: 2px;
+                right: 2px;
+                padding: 3px 4px;
+                background-color: #000;
+                font-size: 12px;
+                line-height: 12px;
+                color: #fff;
+                border-radius: 4px;
+                font-weight: 500;
+            }
+        }
+
+        .detail-container {
+            .detail {
+                width: 100%;
+                padding-left: 8px;
+            }
+
+            .title {
+                font-size: 14px;
+
+                // Text overflow optimization
+                line-height: 20px;
+                white-space: wrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 2; // Cross-browser support for line-clamping
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
+
+            .data,
+            .channel-name {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .bi-reply {
+        transform: rotateY(180deg);
+    }
+}

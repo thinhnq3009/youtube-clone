@@ -1,0 +1,74 @@
+.AppLogin {
+  min-height: calc(100vh - 56px);
+  background-color: red;
+  padding-bottom: 5rem;
+}
+.AppLogin .message {
+  font-size: 13px;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+.AppLogin .banner {
+  width: 100%;
+  transform: translateX(-30%);
+}
+.AppLogin .form-container {
+  max-width: 500px;
+  padding: 2rem 1rem;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.AppLogin .input-block {
+  flex: 1;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.AppLogin .input-block label {
+  margin-left: 10px;
+  line-height: 28px;
+}
+.AppLogin .input-block label.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 20px;
+  line-height: 16px;
+}
+.AppLogin .input-block .input-control {
+  width: 100%;
+  padding: 8px 35px 8px 38px;
+  background-color: rgba(0, 0, 0, 0.1137254902);
+  font-size: 17px;
+  line-height: 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+.AppLogin .input-block .right-icon,
+.AppLogin .input-block .left-icon {
+  position: absolute;
+  font-size: 20px;
+  top: 31px;
+  left: 10px;
+}
+.AppLogin .input-block .right-icon {
+  left: unset;
+  right: 10px;
+  cursor: pointer;
+}
+.AppLogin .input-block button[type=submit] {
+  width: 100%;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 17px;
+  line-height: 20px;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+}/*# sourceMappingURL=app-login.css.map */

@@ -1,0 +1,164 @@
+.AppProfile {
+    .info-container {
+        display: flex;
+        .avatar-container {
+            width: 80px;
+            height: 80px;
+            margin-right: 24px;
+            display: flex;
+            justify-content: center;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                border-radius: 40px;
+                object-fit: contain;
+
+            }
+        }
+
+        .channel-name {
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 400;
+            margin-bottom: 0;
+            span {
+                font-size: 12px;
+                color: #606060;
+                padding-bottom: 8px;
+            }
+        }
+
+        .channel-id,
+        .subscriber-counter {
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 20px;
+            color: #606060;
+            font-weight: 400;
+        }
+    }
+
+    .btn-subscriber {
+        height: 36px;
+	    display: inline-block;
+	    line-height: 36px;
+        background-color: #0f0f0f;
+        color: white;
+        padding: 0 16px;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 18px;
+    }
+
+    .video-container {
+        border-bottom: 1px solid #0000001a;
+
+        .video-item {
+            margin-bottom: 24px;
+
+            &:hover .menu {
+                display: flex;
+            }
+        }
+
+        .title-container {
+            margin-top: 24px;
+            margin-bottom: 24px;
+
+            .title {
+                margin-bottom: 0;
+                display: flex;
+                align-items: center;
+                color: #0f0f0f;
+                line-height: 24px;
+                font-size: 16px;
+                font-weight: 500;
+                .bi {
+                    font-size: 24px;
+                    margin-right: 16px;
+                }
+            }
+
+            a {
+                line-height: 36px;
+                padding-left: 16px;
+                padding-right: 16px;
+                font-size: 16px;
+                font-weight: 500;
+                color: #065fd4;
+
+                &:hover {
+                    background: #def1ff;
+                    border-radius: 18px;
+                }
+            }
+        }
+
+        .video-cover-image {
+            width: 100%;
+            position: relative;
+            img {
+                width: 100%;
+                border-radius: 10px;
+                object-fit: contain;
+            }
+
+            .time {
+                position: absolute;
+                bottom: 2px;
+                right: 2px;
+                padding: 3px 4px;
+                background-color: #000;
+                font-size: 12px;
+                line-height: 12px;
+                color: #fff;
+                border-radius: 4px;
+                font-weight: 500;
+            }
+        }
+
+        .detail-container {
+            padding: 8px 0 8px 0;
+            padding-right: 30px;
+            position: relative;
+            .title {
+                font-size: 14px;
+
+                // Text overflow optimization
+                line-height: 20px;
+                white-space: wrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 2; // Cross-browser support for line-clamping
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
+            .data,
+            .channel-name {
+                color: #606060;
+                font-size: 12px;
+            }
+
+            .menu {
+                position: absolute;
+                right: 5px;
+                top: 8px;
+                display: none;
+                .bi {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    width: 30px;
+                    height: 30px;
+
+                    &:hover {
+                        border-radius: 50%;
+                        background-color: #0000001a;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

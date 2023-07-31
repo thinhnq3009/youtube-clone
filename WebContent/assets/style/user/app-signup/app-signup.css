@@ -1,0 +1,7 @@
+.AppSignup .input-block.invalid {
+  margin-bottom: 0.5rem;
+}
+.AppSignup .input-block.invalid .input-control {
+  border: 1px solid #f00;
+  background-color: rgba(255, 0, 0, 0.2);
+}/*# sourceMappingURL=app-signup.css.map */

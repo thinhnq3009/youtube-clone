@@ -1,0 +1,85 @@
+.AppLibrary .video-group:not(:first-child) {
+  border-top: 1px solid rgba(0, 0, 0, 0.1098039216);
+}
+.AppLibrary .video-item {
+  margin-bottom: 24px;
+}
+.AppLibrary .title-container {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.AppLibrary .title-container .title {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  color: #0f0f0f;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.AppLibrary .title-container .title .avatar {
+  margin-top: 12px;
+  margin-right: 12px;
+  width: 36px;
+  min-width: 36px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  height: 36px;
+  border-radius: 50%;
+}
+.AppLibrary .title-container .title .bi {
+  font-size: 24px;
+  margin-right: 16px;
+}
+.AppLibrary .title-container a {
+  line-height: 36px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #065fd4;
+}
+.AppLibrary .title-container a:hover {
+  background: #def1ff;
+  border-radius: 18px;
+}
+.AppLibrary .video-cover-image {
+  width: 100%;
+  position: relative;
+}
+.AppLibrary .video-cover-image img {
+  width: 100%;
+  border-radius: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.AppLibrary .video-cover-image .time {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  padding: 3px 4px;
+  background-color: #000;
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.AppLibrary .detail-container {
+  padding: 8px 0 8px 0;
+}
+.AppLibrary .detail-container .title {
+  font-size: 14px;
+  line-height: 20px;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.AppLibrary .detail-container .data,
+.AppLibrary .detail-container .channel-name {
+  color: #606060;
+  font-size: 12px;
+}/*# sourceMappingURL=app-library.css.map */

@@ -1,0 +1,81 @@
+.AppLogin {
+    min-height: calc(100vh - 56px);
+    background-color: red;
+    padding-bottom: 5rem;
+    .message {
+        font-size: 13px;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        text-align: center;
+        margin-bottom: 0 !important;
+    }
+    .banner {
+        width: 100%;
+        transform: translateX(-30%);
+    }
+
+    .form-container {
+        max-width: 500px;
+        padding: 2rem 1rem;
+        border-radius: 15px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-block {
+        flex: 1;
+        position: relative;
+        margin-bottom: 1.5rem;
+
+        label {
+            margin-left: 10px;
+            line-height: 28px;
+            &.error {
+                color: red;
+                font-size: 12px;
+                margin-top: 5px;
+                margin-left: 20px;
+                line-height: 16px;
+            }
+        }
+
+        .input-control {
+            width: 100%;
+            padding: 8px 35px 8px 38px;
+            background-color: #0000001d;
+            font-size: 17px;
+            line-height: 20px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+        }
+
+        .right-icon,
+        .left-icon {
+            position: absolute;
+            font-size: 20px;
+            top: 31px;
+            left: 10px;
+        }
+
+        .right-icon {
+            left: unset;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            max-width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            font-size: 17px;
+            line-height: 20px;
+            background-color: red;
+            color: white;
+            border-radius: 20px;
+        }
+    }
+}

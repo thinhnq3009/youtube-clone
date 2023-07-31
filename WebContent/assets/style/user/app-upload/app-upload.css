@@ -1,0 +1,138 @@
+.AppUpload {
+  padding-top: 3rem;
+}
+.AppUpload .box-header {
+  border-bottom: 2px solid #606060;
+  padding-left: 3rem;
+  padding-bottom: 0.3rem;
+  margin-bottom: 2rem;
+}
+.AppUpload .box {
+  padding: 25px 0;
+  padding-top: 15px;
+  border: 2px solid #606060;
+  border-radius: 20px;
+}
+.AppUpload .form-container .form-floating:focus ~ .counter {
+  display: block !important;
+}
+.AppUpload .preview-container {
+  margin-bottom: 3rem;
+  position: relative;
+}
+.AppUpload .preview-container:hover button {
+  display: block;
+}
+.AppUpload .preview-container button {
+  position: absolute;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.6);
+  background: transparent;
+  top: 5px;
+  right: 10px;
+  display: none;
+  cursor: pointer;
+  z-index: 10000;
+}
+.AppUpload .preview-container video,
+.AppUpload .preview-container img {
+  width: 100%;
+  border: 1px solid #606060;
+  border-radius: 10px;
+}
+.AppUpload .input-container {
+  padding: 3rem;
+  border: 1px solid #606060;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.AppUpload .input-container .bi {
+  font-size: 55px;
+}
+.AppUpload .input-container input[type=file] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.AppUpload .poster-preview {
+  border-top: 1px solid #606060;
+}
+.AppUpload .poster-preview .video-item {
+  margin-bottom: 24px;
+}
+.AppUpload .poster-preview .title-container {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.AppUpload .poster-preview .title-container .title {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  color: #0f0f0f;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.AppUpload .poster-preview .title-container .title .bi {
+  font-size: 24px;
+  margin-right: 16px;
+}
+.AppUpload .poster-preview .title-container a {
+  line-height: 36px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #065fd4;
+}
+.AppUpload .poster-preview .title-container a:hover {
+  background: #def1ff;
+  border-radius: 18px;
+}
+.AppUpload .poster-preview .video-cover-image {
+  width: 100%;
+  position: relative;
+}
+.AppUpload .poster-preview .video-cover-image img {
+  width: 100%;
+  border-radius: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.AppUpload .poster-preview .video-cover-image .time {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  padding: 3px 4px;
+  background-color: #000;
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.AppUpload .poster-preview .detail-container {
+  padding: 8px 0 8px 0;
+}
+.AppUpload .poster-preview .detail-container .title {
+  font-size: 14px;
+  line-height: 20px;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.AppUpload .poster-preview .detail-container .data,
+.AppUpload .poster-preview .detail-container .channel-name {
+  color: #606060;
+  font-size: 12px;
+}/*# sourceMappingURL=app-upload.css.map */

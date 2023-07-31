@@ -1,0 +1,12 @@
+.AppSignup{
+   .input-block {
+        &.invalid {
+            margin-bottom: .5rem;
+            .input-control {
+                border: 1px solid #f00;
+                background-color: #FF000033;
+            }
+            
+        }
+   }
+}

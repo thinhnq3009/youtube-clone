@@ -1,0 +1,30 @@
+.ShareDialog {
+    background-color: #00000044;
+
+    .link-container {
+        padding: 0.3rem 0.8rem 0.4rem 0.7rem;
+        flex: 1;
+        border: 1px solid #f00;
+        outline: none;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+
+    .btn-copy {
+        padding: 0 15px 0 10px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background-color: #f00;
+        color: #fff;
+    }
+
+    .left-icon {
+        top: 28px !important;
+        bottom: unset !important;
+    }
+
+    textarea {
+        border-radius: 10px !important;
+    }
+}
